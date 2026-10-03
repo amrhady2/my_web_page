@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Local credentials (never commit)
+fast-feed-alerts.json
+flask-profile.json
+*service-account*.json

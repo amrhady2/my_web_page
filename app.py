@@ -1,12 +1,12 @@
+import os
 import gspread
 from flask import Flask, render_template, request
 
-gc = gspread.service_account(filename='flask-profile.json')
+gc = gspread.service_account(filename=os.environ["GOOGLE_APPLICATION_CREDENTIALS"])
 sh= gc.open('flask-profile')
 
 shProfile = sh.get_worksheet(0)
 shContact = sh.get_worksheet(1)
-shContact.append_row(['Bob', 'bob@gmail.com', ' hi'])
 
 
 

@@ -1,0 +1,7 @@
+.git
+.env
+.env.*
+**/fast-feed-alerts.json
+**/flask-profile.json
+**/*service-account*.json
+**/__pycache__
